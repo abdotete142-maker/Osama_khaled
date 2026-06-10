@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="أسامة خالد - أخصائي الحجامة والإسعافات الأولية. احجز جلستك الآن." />
+  <meta name="keywords" content="حجامة, إسعافات أولية, أسامة خالد, علاج, صحة" />
+  <meta name="author" content="أسامة خالد" />
+  <title>🚑🧰 أسامة خالد | أخصائي الحجامة والإسعافات الأولية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loader-content">
+      <div class="loader-icon"><i class="fas fa-heartbeat"></i></div>
+      <div class="loader-pulse"></div>
+      <p class="loader-text">أسامة خالد</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+        <span>أسامة خالد</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link">نبذة عني</a></li>
+        <li><a href="#certificates" class="nav-link">الشهادات</a></li>
+        <li><a href="#packages" class="nav-link">الباقات</a></li>
+        <li><a href="#booking" class="nav-link booking-nav-btn">احجز الآن</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="تبديل الوضع">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <i class="fas fa-shield-heart"></i>
+        <span>أخصائي معتمد</span>
+      </div>
+      <h1 class="hero-name reveal-up"><span>أسامة خالد</span></h1>
+      <h2 class="hero-title reveal-up">أخصائي الحجامة والإسعافات الأولية</h2>
+      <p class="hero-tagline reveal-up">نحو صحة أفضل بأيدٍ أمينة وخبرة موثوقة — جلسات علاجية ووقائية بأعلى معايير الجودة والسلامة</p>
+      <div class="hero-cta reveal-up">
+        <button class="btn-primary" onclick="openBooking()">
+          <i class="fas fa-calendar-check"></i> احجز الآن
+        </button>
+        <a href="#about" class="btn-secondary">
+          <i class="fas fa-arrow-down"></i> اعرف أكثر
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span>
+          <span class="stat-label">عميل راضٍ</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">سنوات خبرة</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="10">0</span>
+          <span class="stat-label">شهادات معتمدة</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+  </section>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/201270192689" target="_blank" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">تواصل معنا</span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top" aria-label="العودة للأعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">من أنا</span>
+        <h2 class="section-title">نبذة عني</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-right">
+          <div class="about-image-frame">
+            <img src="WhatsApp Image 2026-06-10 at 8.57.03 PM.jpeg" alt="أسامة خالد" class="about-real-img" loading="lazy" />
+            <div class="image-glow"></div>
+          </div>
+          <div class="about-badge-float">
+            <i class="fas fa-certificate"></i>
+            <span>أخصائي معتمد</span>
+          </div>
+        </div>
+        <div class="about-content reveal-left">
+          <h3 class="about-name">أسامة خالد</h3>
+          <p class="about-subtitle">أخصائي الحجامة والإسعافات الأولية</p>
+          <p class="about-bio">متخصص في مجال الحجامة العلاجية والوقائية بخبرة واسعة تمتد لأكثر من خمس سنوات في تقديم الرعاية الصحية المتكاملة. أسعى دائماً لتقديم خدمة احترافية مبنية على أسس علمية سليمة وأعلى معايير النظافة والسلامة الطبية.</p>
+          <p class="about-bio">حاصل على عدة شهادات معتمدة في مجال الحجامة والإسعافات الأولية، وأعمل بشغف وإخلاص لمساعدة عملائي على تحسين جودة حياتهم والوصول إلى صحة مثلى.</p>
+          <div class="skills-grid">
+            <div class="skill-card"><div class="skill-icon"><i class="fas fa-syringe"></i></div><span>الحجامة العلاجية</span></div>
+            <div class="skill-card"><div class="skill-icon"><i class="fas fa-shield-heart"></i></div><span>الحجامة الوقائية</span></div>
+            <div class="skill-card"><div class="skill-icon"><i class="fas fa-kit-medical"></i></div><span>الإسعافات الأولية</span></div>
+            <div class="skill-card"><div class="skill-icon"><i class="fas fa-leaf"></i></div><span>الطب التكميلي</span></div>
+          </div>
+          <div class="experience-highlights">
+            <div class="exp-item"><i class="fas fa-check-circle"></i><span>خبرة +5 سنوات في المجال</span></div>
+            <div class="exp-item"><i class="fas fa-check-circle"></i><span>شهادات معتمدة محلياً ودولياً</span></div>
+            <div class="exp-item"><i class="fas fa-check-circle"></i><span>أدوات معقمة ومعايير نظافة عالية</span></div>
+            <div class="exp-item"><i class="fas fa-check-circle"></i><span>جلسات فردية بالمنازل والعيادات</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="certificates-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">إنجازاتي</span>
+        <h2 class="section-title">الشهادات</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certificates-grid two-cols">
+
+        <div class="cert-card reveal-up" onclick="openLightbox('ss.jpeg', 'شهادة الحجامة المعتمدة')">
+          <div class="cert-img-wrap">
+            <img src="ss.jpeg" alt="شهادة الحجامة المعتمدة" class="cert-real-img" loading="lazy" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i><span>عرض الشهادة</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>شهادة الحجامة المعتمدة</h4>
+            <p>الجمعية العلمية للطب البديل</p>
+    
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up" onclick="openLightbox('WhatsApp Image 2026-06-10 at 8.24.32 PM.jpeg', 'شهادة الإسعافات الأولية')">
+          <div class="cert-img-wrap">
+            <img src="WhatsApp Image 2026-06-10 at 8.24.32 PM.jpeg" alt="شهادة الإسعافات الأولية" class="cert-real-img" loading="lazy" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i><span>عرض الشهادة</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>شهادة الإسعافات الأولية</h4>
+       
+
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up" onclick="openLightbox('shhada.jpeg', 'شهادة معتمدة')">
+          <div class="cert-img-wrap">
+            <img src="shhada.jpeg" alt="شهادة معتمدة" class="cert-real-img" loading="lazy" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i><span>عرض الشهادة</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>شهادة معتمدة</h4>
+            <p>مركز التدريب الطبي</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DUMMY closing div to avoid parse errors — original had extra open div, balanced here -->
+  <div style="display:none"></div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+      <img id="lightbox-img" src="" alt="" class="lightbox-real-img" />
+      <p class="lightbox-title" id="lightbox-title"></p>
+    </div>
+  </div>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="packages-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">خدماتي</span>
+        <h2 class="section-title">الباقات والجلسات</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">اختر الباقة المناسبة لاحتياجاتك الصحية</p>
+      </div>
+      <div class="packages-grid">
+
+        <div class="pkg-card reveal-up">
+          <div class="pkg-img-wrap">
+            <img src="hgama.jpeg" alt="الحجامة الوقائية" class="pkg-real-img" loading="lazy" />
+            <div class="pkg-badge">الأكثر طلباً</div>
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-name">الحجامة الوقائية</h3>
+            <p class="pkg-desc">جلسة حجامة وقائية شاملة للحفاظ على الصحة العامة ومنع تراكم الأمراض، مناسبة للأصحاء الراغبين في تعزيز مناعتهم.</p>
+            <div class="pkg-features">
+              <span><i class="fas fa-check"></i> جلسة 60-90 دقيقة</span>
+              <span><i class="fas fa-check"></i> أدوات معقمة</span>
+              <span><i class="fas fa-check"></i> متابعة ما بعد الجلسة</span>
+            </div>
+            <div class="pkg-price"><span class="price-amount">200</span><span class="price-currency">جنيه</span></div>
+            <button class="btn-pkg" onclick="openBooking('الحجامة الوقائية')">
+              <i class="fas fa-calendar-plus"></i> احجز الجلسة
+            </button>
+          </div>
+        </div>
+
+        <div class="pkg-card featured reveal-up">
+          <div class="pkg-img-wrap">
+            <img src="WhatsApp Image 2026-06-10 at 8.56.59 PM.jpeg" alt="الحجامة العلاجية" class="pkg-real-img" loading="lazy" />
+            <div class="pkg-badge premium">مميز</div>
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-name">الحجامة العلاجية</h3>
+            <p class="pkg-desc">جلسة حجامة علاجية متخصصة لعلاج الآلام المزمنة وتحسين الدورة الدموية وتخفيف التوتر العضلي والمفصلي.</p>
+            <div class="pkg-features">
+              <span><i class="fas fa-check"></i> تشخيص دقيق قبل الجلسة</span>
+              <span><i class="fas fa-check"></i> علاج مخصص للحالة</span>
+              <span><i class="fas fa-check"></i> تقرير طبي بعد الجلسة</span>
+            </div>
+            <div class="pkg-price"><span class="price-amount">150</span><span class="price-currency">جنيه</span></div>
+            <button class="btn-pkg" onclick="openBooking('الحجامة العلاجية')">
+              <i class="fas fa-calendar-plus"></i> احجز الجلسة
+            </button>
+          </div>
+        </div>
+
+        <div class="pkg-card reveal-up">
+          <div class="pkg-img-wrap">
+            <img src="unnamed.webp" alt="جلسة إسعافات أولية" class="pkg-real-img" loading="lazy" />
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-name">جلسة إسعافات أولية</h3>
+            <p class="pkg-desc">تدريب احترافي على الإسعافات الأولية للأفراد والمجموعات، شاملاً الإنعاش القلبي الرئوي والتعامل مع الحوادث.</p>
+            <div class="pkg-features">
+              <span><i class="fas fa-check"></i> تدريب عملي متكامل</span>
+              <span><i class="fas fa-check"></i> شهادة حضور</span>
+              <span><i class="fas fa-check"></i> مواد تدريبية</span>
+            </div>
+            <div class="pkg-price"><span class="price-amount">200</span><span class="price-currency">جنيه</span></div>
+            <button class="btn-pkg" onclick="openBooking('جلسة إسعافات أولية')">
+              <i class="fas fa-calendar-plus"></i> احجز الجلسة
+            </button>
+          </div>
+        </div>
+
+        <div class="pkg-card reveal-up">
+          <div class="pkg-img-wrap">
+            <img src="what-is-rehabilitation-and-when-do-you-actually-need-it.png" alt="جلسة التأهيل الحركي" class="pkg-real-img" loading="lazy" />
+            <div class="pkg-badge vip">VIP</div>
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-name">جلسة التأهيل الحركي </h3>
+            <p class="pkg-desc">باقات مخصصة حسب احتياجاتك الصحية الفردية تشمل جلسات متعددة ومتابعة دورية ومشورة صحية متكاملة.</p>
+            <div class="pkg-features">
+              <span><i class="fas fa-check"></i> تأخيل ما بعد العمليات الجراحية  </span>
+              <span><i class="fas fa-check"></i> الأهيل ما بعد اصابات الملاعب </span>
+              <span><i class="fas fa-check"></i> متابعة مستمرة</span>
+            </div>
+            <div class="pkg-price"><span class="price-amount">150</span><span class="price-currency">جنيه</span></div>
+            <button class="btn-pkg" onclick="openBooking('الباقات الخاصة')">
+              <i class="fas fa-calendar-plus"></i> احجز الجلسة
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CTA ANCHOR -->
+  <section id="booking" class="booking-cta-section section">
+    <div class="container">
+      <div class="booking-cta-box reveal-up">
+        <div class="booking-cta-icon"><i class="fas fa-calendar-check"></i></div>
+        <h2>هل أنت مستعد لجلستك؟</h2>
+        <p>احجز الآن وسنتواصل معك لتأكيد الموعد في أقرب وقت</p>
+        <button class="btn-cta-book" onclick="openBooking()">
+          <span class="btn-cta-icon"><i class="fas fa-calendar-check"></i></span>
+          <span class="btn-cta-text">احجز الآن</span>
+          <span class="btn-cta-arrow"><i class="fas fa-arrow-left"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div id="booking-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBooking()" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+
+      <div id="modal-form-view" class="modal-view">
+        <div class="modal-header">
+          <div class="modal-icon"><i class="fas fa-calendar-check"></i></div>
+          <h2 id="modal-title">احجز جلستك</h2>
+          <p>أدخل بياناتك وسنتواصل معك لتأكيد الموعد</p>
+        </div>
+        <form id="booking-form" class="booking-form" onsubmit="submitBooking(event)" novalidate>
+          <div class="form-group">
+            <label for="full-name"><i class="fas fa-user"></i> الاسم الكامل</label>
+            <input type="text" id="full-name" placeholder="أدخل اسمك الكامل" required autocomplete="name" />
+            <span class="field-error" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-phone"></i> رقم الهاتف</label>
+            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" required autocomplete="tel" />
+            <span class="field-error" id="err-phone"></span>
+          </div>
+          <div class="form-group">
+            <label for="session-type"><i class="fas fa-list"></i> نوع الجلسة</label>
+            <select id="session-type" required>
+              <option value="">اختر نوع الجلسة</option>
+              <option value="الحجامة الوقائية">الحجامة الوقائية</option>
+              <option value="الحجامة العلاجية">الحجامة العلاجية</option>
+              <option value="جلسة إسعافات أولية">جلسة إسعافات أولية</option>
+              <option value="الباقات الخاصة">الباقات الخاصة</option>
+            </select>
+            <span class="field-error" id="err-session"></span>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> تأكيد الحجز
+          </button>
+        </form>
+      </div>
+
+      <div id="modal-success-view" class="modal-view hidden">
+        <div class="success-animation">
+          <div class="success-circle">
+            <svg viewBox="0 0 52 52" class="checkmark-svg">
+              <circle cx="26" cy="26" r="25" fill="none" class="checkmark-circle"/>
+              <path fill="none" d="M14 27 l8 8 l16-16" class="checkmark-path"/>
+            </svg>
+          </div>
+          <h3>تم الحجز بنجاح!</h3>
+          <p>تم استلام طلبك وسيتم التواصل معك قريباً</p>
+          <button class="btn-primary" onclick="closeBooking()">
+            <i class="fas fa-home"></i> العودة للرئيسية
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">تواصل</span>
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">نحن هنا لمساعدتك — تواصل معنا في أي وقت</p>
+      </div>
+      <div class="contact-cards reveal-up">
+        <a href="tel:+201270192689" class="contact-card">
+          <div class="contact-icon phone-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-info">
+            <h4>رقم الهاتف</h4>
+            <p dir="ltr">+20 12 70192689</p>
+          </div>
+          <div class="contact-arrow"><i class="fas fa-arrow-left"></i></div>
+        </a>
+        <a href="https://wa.me/201270192689" target="_blank" class="contact-card">
+          <div class="contact-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-info">
+            <h4>واتساب</h4>
+            <p dir="ltr">+20 12 70192689</p>
+          </div>
+          <div class="contact-arrow"><i class="fas fa-arrow-left"></i></div>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="contact-card">
+          <div class="contact-icon facebook-icon"><i class="fab fa-facebook-f"></i></div>
+          <div class="contact-info">
+            <h4>فيسبوك</h4>
+            <p>صفحتنا على فيسبوك</p>
+          </div>
+          <div class="contact-arrow"><i class="fas fa-arrow-left"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+          <span>أسامة خالد</span>
+        </div>
+        <p class="footer-tagline">أخصائي الحجامة والإسعافات الأولية</p>
+        <div class="footer-links">
+          <a href="#hero">الرئيسية</a>
+          <a href="#about">نبذة عني</a>
+          <a href="#certificates">الشهادات</a>
+          <a href="#packages">الباقات</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+        <p class="footer-copy">© 2026 أسامة خالد — جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
