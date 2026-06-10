@@ -919,7 +919,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 4rem; }
-  .about-image-wrapper { max-width: 380px; margin: 0 auto; }
+  .about-image-wrapper { max-width: 400px; margin: 0 auto; }
   .certificates-grid { grid-template-columns: repeat(2, 1fr); }
   .packages-grid { grid-template-columns: 1fr; }
 }
@@ -1029,6 +1029,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: 28px;
 }
 
+/* Force frame to always have a rendered height on all screen sizes */
+.about-image-frame {
+  min-height: 320px;
+}
+
 /* ============================================================
    PACKAGES — REAL IMAGE
    ============================================================ */
@@ -1096,15 +1101,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ABOUT RESPONSIVE FIXES
    ============================================================ */
 @media (max-width: 900px) {
-  .about-image-wrapper { max-width: 340px; }
-  .about-image-frame { aspect-ratio: 1/1; }
+  .about-image-wrapper { max-width: 400px; margin: 0 auto; }
+  .about-image-frame {
+    aspect-ratio: 4/5;
+    min-height: 380px;
+  }
   .about-real-img { object-position: center 10%; }
 }
 
 @media (max-width: 600px) {
-  .about-image-wrapper { max-width: 280px; }
-  .about-image-frame { aspect-ratio: 1/1; border-radius: 20px; }
-  .about-real-img { border-radius: 20px; }
+  .about-image-wrapper { max-width: 320px; }
+  .about-image-frame {
+    aspect-ratio: 1/1;
+    min-height: 300px;
+    border-radius: 20px;
+  }
+  .about-real-img { border-radius: 20px; object-position: center 8%; }
   .about-badge-float { bottom: -1rem; right: -0.75rem; padding: 0.65rem 1rem; font-size: 0.8rem; }
   .certificates-grid.two-cols { grid-template-columns: repeat(2, 1fr); max-width: 680px; }
 }
